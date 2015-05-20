@@ -18,13 +18,14 @@ ALL 2d and 3d tranformations however 3d rotations (rotateX, rotateY) will not lo
 
 ```javascript
 var applyTransform = require('ie-css-transform');
-
+ 
 var el = document.createElement('div');
-
-applyTransform(el, 'perspective(1000px) translateZ(-500px)', '0% 0%');
-
+ 
+applyTransform(el, 'perspective(1000px) translate3d(100px, 100px, 500px)', '0% 0%');
+ 
 el.style.width = el.style.height = '100px';
 el.style.background = '#CAFE00';
+document.body.appendChild(el);
 ```
 
 Optionally a [gl-mat4](http://npmjs.com/gl-mat4) can be passed instead of a transform value. This will be slightly more performant as the string does not need to be parsed. Also for a smaller file size you may want to do the following:
@@ -40,6 +41,7 @@ fromMatrix(el, matrix, '100% 0%');
 
 el.style.width = el.style.height = '100px';
 el.style.background = '#CAFE00';
+document.body.appendChild(el);
 ```
 
 ## Gotchas
