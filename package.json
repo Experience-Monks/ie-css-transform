@@ -1,6 +1,6 @@
 {
   "name": "ie-css-transform",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A function which you pass a css transform (2d or 3d) and an optional transform origin value to and it will try to emulate it for ie6 - ie8.",
   "main": "index.js",
   "license": "MIT",
