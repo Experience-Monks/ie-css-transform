@@ -2,6 +2,8 @@
 
 [![experimental](http://badges.github.io/stability-badges/dist/experimental.svg)](http://github.com/badges/stability-badges)
 
+![Example](https://raw.githubusercontent.com/Jam3/ie-css-transform/master/example.gif)
+
 A function which you pass a css transform (2d or 3d) and an optional transform origin value to and it will try to emulate it for ie6 - ie8.
 
 For browsers which support css transforms it will simply just use the css transform property.

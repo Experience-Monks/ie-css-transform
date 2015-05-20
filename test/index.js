@@ -65,7 +65,7 @@ createAnimatedTest( function() {
 
 function createAnimatedTest(getTransform, transformOrigin) {
 
-  var el = getElement('#CAFE00');
+  var el = getElement('#FF0000');
   
 
   var animate = function() {
