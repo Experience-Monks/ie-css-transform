@@ -24,10 +24,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/mikkoh/ie-css-transform.git"
+    "url": "git://github.com/Jam3/ie-css-transform.git"
   },
-  "homepage": "https://github.com/mikkoh/ie-css-transform",
+  "homepage": "https://github.com/Jam3/ie-css-transform",
   "bugs": {
-    "url": "https://github.com/mikkoh/ie-css-transform/issues"
+    "url": "https://github.com/Jam3/ie-css-transform/issues"
   }
 }
