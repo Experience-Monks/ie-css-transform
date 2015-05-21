@@ -15,7 +15,7 @@ module.exports = function ieCSSTransformFromString(el, transform, transformOrigi
     // since it wasn't crappy ie just apply through the transform prop
     } else {
       el.style.transform = transform;
-      el.style.ieTransform = transform;
+      el.style.msTransform = transform;
 
       applyTransformOrigin(el, transformOrigin);
     }
