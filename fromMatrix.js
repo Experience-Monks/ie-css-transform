@@ -5,7 +5,6 @@ var applyTransformOrigin = require('./lib/applyTransformOrigin');
 module.exports = function ieCSSTransformFromMatrix(el, matrix, transformOrigin) {
 
     var matrixString;
-    var perspective;
 
     if(checkIsCrappyIE(el)) {
       applyMatrix(el, matrix, transformOrigin);
@@ -15,11 +14,7 @@ module.exports = function ieCSSTransformFromMatrix(el, matrix, transformOrigin) 
       if(matrix.length === 6) {
         el.style.transform = 'matrix(' + matrixString + ')';  
       } else {
-        perspective = -1 / matrix[ 11 ];
-
-        el.style.transform = 
-        el.style.msTrasnform = 
-        'perspective(' + perspective + 'px) matrix3d(' + matrixString + ')'; 
+        el.style.transform = 'matrix3d(' + matrixString + ')';  
       }
 
       applyTransformOrigin(el, transformOrigin);
