@@ -13,6 +13,7 @@
     "an-array": "^1.0.0",
     "css-transform-to-mat4": "^1.0.3",
     "gl-mat4": "^1.1.3",
+    "ie-version": "^0.1.0",
     "raf": "^2.0.4"
   },
   "devDependencies": {},
